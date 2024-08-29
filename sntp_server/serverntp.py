@@ -5,8 +5,9 @@ import time
 import queue
 import threading
 import select
-import serial
-import pynmea2
+import  pynmea2
+import  serial
+import serial.tools.list_ports
 from datetime import timezone, datetime as dt
 taskQueue = queue.Queue()
 stopFlag = False
@@ -57,34 +58,65 @@ def _to_time(integ, frac, n=32):
 class NTPException(Exception):
     """Exception raised by this module."""
     pass
+
+def find_baud_rate(port):
+    baud_rates = [4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600]
+    for baud_rate in baud_rates:
+        try:
+            ser = serial.Serial(port, baud_rate, timeout=1)
+            ser.write(b'ping\n')  # Gửi lệnh mẫu tới thiết bị
+            response = ser.readline()
+            ser.close()
+            if response:
+                print(f"Found valid baud rate: {baud_rate}")
+                return baud_rate
+        except:
+            pass
+    print("No valid baud rate found.")
+    return None
+
+# Danh sách các cổng nối tiếp có sẵn
+def find_port_baud():
+    port_bauds = []
+    ports = list(serial.tools.list_ports.comports())
+    for port in ports:
+        print(f"Checking port: {port.device}")
+        baud_rate = find_baud_rate(port.device)
+        if baud_rate:
+            port_bauds.append({"port": port.device, "baud": baud_rate})
+    return port_bauds
 def get_gps_time():
+    port_baud = find_port_baud()
+    print(port_baud[0])
     # Read GPS time from the GPS module
-        ser = serial.Serial('COM3', 4800, timeout=1)
+    if len(port_baud) >=1 : 
+        ser = serial.Serial(port_baud[0]["port"], port_baud[0]["baud"], timeout=1)
         try:
             while True:
                 line = ser.readline().decode('ascii', errors='replace')
                 if line.startswith('$GPRMC') or line.startswith('$GPGGA'):
                     msg = pynmea2.parse(line)
                     gps_time = msg.timestamp  # This is a `datetime.time` object
-                    print(gps_time)
                     current_time = 0
                     if gps_time:
                             # Combine GPS time with today's date to form a `datetime.datetime` object
                             now = dt.now(timezone.utc)
                             current_time = dt.combine(now.date(), gps_time).timestamp()
+                            
                     else:
                         # Fallback to system time if GPS time is unavailable
                         current_time = time.time()
-                
                     # SNTP format requires time since 1900-01-01 00:00:00 UTC
-               
-                     
+                    print(current_time)
                     return current_time
         except (serial.SerialException, pynmea2.nmea.ChecksumError) as e:
             print(f"Error reading GPS time: {e}")
             return None
         finally:
             ser.close()
+
+
+
 class NTP:
     """Helper class defining constants."""
 
@@ -273,8 +305,10 @@ class RecvThread(threading.Thread):
                         data,addr = tempSocket.recvfrom(1024)
                         recvTimestamp = recvTimestamp = system_to_ntp_time(get_gps_time())
                         taskQueue.put((data,addr,recvTimestamp))
-                    except(OSError, err):
-                        print(err)
+                    except OSError as e:
+                          print("An error occurred:", e) 
+                        
+                        
 
 class WorkThread(threading.Thread):
     def __init__(self, socket):
@@ -327,6 +361,7 @@ if __name__ == "__main__":
             stopFlag = True
             recvThread.join()
             workThread.join()
-            #socket.close()
+            socket.close()
             print ("Exited")
             break
+       
