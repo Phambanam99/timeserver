@@ -7,7 +7,7 @@ def find_used_ports_and_baudrates(possible_baudrates=[9600, 115200, 38400, 4800]
     used_ports_info = []
 
     for port in serial.tools.list_ports.comports():
-        print(port)
+        print(port.device)
         try:
             for baudrate in possible_baudrates:
                 try:
@@ -17,7 +17,7 @@ def find_used_ports_and_baudrates(possible_baudrates=[9600, 115200, 38400, 4800]
                         response = ser.readline().decode().strip()
                         print(ser.readline())
                         # Check for a valid response (adjust for your device)
-                        if "OK" in response:
+                        if  response != "":
                             used_ports_info.append((port.device, baudrate))
                             break  # Stop trying other baud rates for this port
 

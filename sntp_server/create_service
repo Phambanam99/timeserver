@@ -1,0 +1,5 @@
+#/etc/systemd/system/mytimerserver.service 
+#sudo systemctl enable  mytimerserver.service
+#sudo systemctl start  mytimerserver.service
+#sudo systemctl stop  mytimerserver.service
+#sudo systemctl status  mytimerserver.service

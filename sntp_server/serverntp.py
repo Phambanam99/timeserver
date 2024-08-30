@@ -91,8 +91,9 @@ def get_gps_time():
     # Read GPS time from the GPS module
     if len(port_baud) >=1 : 
         ser = serial.Serial(port_baud[0]["port"], port_baud[0]["baud"], timeout=1)
-        try:
-            while True:
+        while True:
+            try:
+                
                 line = ser.readline().decode('ascii', errors='replace')
                 if line.startswith('$GPRMC') or line.startswith('$GPGGA'):
                     msg = pynmea2.parse(line)
@@ -109,12 +110,13 @@ def get_gps_time():
                     # SNTP format requires time since 1900-01-01 00:00:00 UTC
                     print(current_time)
                     return current_time
-        except (serial.SerialException, pynmea2.nmea.ChecksumError) as e:
-            print(f"Error reading GPS time: {e}")
-            return None
-        finally:
-            ser.close()
-
+            except (serial.SerialException, pynmea2.nmea.ChecksumError) as e:
+                print(f"Error reading GPS time: {e}")
+                return 0
+            finally:
+                ser.close()
+    else :
+        return 0
 
 
 class NTP:
@@ -344,7 +346,7 @@ class WorkThread(threading.Thread):
                 continue
 if __name__ == "__main__":
     listenIp = "0.0.0.0"
-    listenPort = 123
+    listenPort = 12345
     socket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     socket.bind((listenIp,listenPort))
     print("local socket: ", socket.getsockname())

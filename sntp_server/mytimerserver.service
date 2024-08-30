@@ -1,0 +1,10 @@
+[Unit]
+Description=Time server from gps
+
+[Service]
+ExecStart=/home/p7/timeserver/sntp_server/start_server.sh
+Restart=always
+User=p7
+WorkingDirectory=/home/p7/timeserver/sntp_server/
+[Install]
+WantedBy=multi-user.target

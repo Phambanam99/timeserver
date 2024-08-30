@@ -2,7 +2,7 @@ import socket
 import struct
 import time
 
-def sntp_request(host='127.0.0.1', port=123):
+def sntp_request(host='127.0.0.1', port=12345):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     
     # Send an SNTP request (empty message)
