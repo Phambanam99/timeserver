@@ -7,6 +7,7 @@ import threading
 import select
 import  pynmea2
 import  serial
+import os
 import serial.tools.list_ports
 from datetime import timezone, datetime as dt
 taskQueue = queue.Queue()
@@ -76,7 +77,7 @@ def find_baud_rate(port):
     return None
 
 # Danh sách các cổng nối tiếp có sẵn
-def find_port_baud():
+def find_port_baud(possible_baudrates=[9600, 115200, 38400, 4800]):
     port_bauds = []
     ports = list(serial.tools.list_ports.comports())
     for port in ports:
@@ -84,18 +85,20 @@ def find_port_baud():
         baud_rate = find_baud_rate(port.device)
         if baud_rate:
             port_bauds.append({"port": port.device, "baud": baud_rate})
+    if len(port_bauds) == 0:
+        port_bauds.append({"port": "/dev/ttyS0", "baud": 9600})
     return port_bauds
 def get_gps_time():
     port_baud = find_port_baud()
-    print(port_baud[0])
+ 
     # Read GPS time from the GPS module
     if len(port_baud) >=1 : 
         ser = serial.Serial(port_baud[0]["port"], port_baud[0]["baud"], timeout=1)
-        while True:
-            try:
-                
+        try:
+            while True:
                 line = ser.readline().decode('ascii', errors='replace')
-                if line.startswith('$GPRMC') or line.startswith('$GPGGA'):
+                if line.startswith('$GPRMC') or line.startswith('$GPGGA') or line.startswith('$GNGNS') or line.startswith('$GNGST') or line.startswith('$GPGRS'):
+                    print("oke")
                     msg = pynmea2.parse(line)
                     gps_time = msg.timestamp  # This is a `datetime.time` object
                     current_time = 0
@@ -103,18 +106,18 @@ def get_gps_time():
                             # Combine GPS time with today's date to form a `datetime.datetime` object
                             now = dt.now(timezone.utc)
                             current_time = dt.combine(now.date(), gps_time).timestamp()
-                            
                     else:
                         # Fallback to system time if GPS time is unavailable
                         current_time = time.time()
                     # SNTP format requires time since 1900-01-01 00:00:00 UTC
                     print(current_time)
+                    ser.close()
                     return current_time
-            except (serial.SerialException, pynmea2.nmea.ChecksumError) as e:
-                print(f"Error reading GPS time: {e}")
-                return 0
-            finally:
-                ser.close()
+        except (serial.SerialException, pynmea2.nmea.ChecksumError) as e:
+            print(f"Error reading GPS time: {e}")
+            return 0
+        finally:
+            ser.close()
     else :
         return 0
 
@@ -289,9 +292,10 @@ class NTPPacket:
         self.orig_timestamp_low = low
 
 class RecvThread(threading.Thread):
-    def __init__(self, socket):
+    def __init__(self, socket, t):
         super().__init__()
         self.socket = socket
+        self.t = t
     
     def run(self):
         global taskQueue,stopFlag
@@ -305,7 +309,7 @@ class RecvThread(threading.Thread):
                 for tempSocket in rlist:
                     try:
                         data,addr = tempSocket.recvfrom(1024)
-                        recvTimestamp = recvTimestamp = system_to_ntp_time(get_gps_time())
+                        recvTimestamp = recvTimestamp = system_to_ntp_time(0)
                         taskQueue.put((data,addr,recvTimestamp))
                     except OSError as e:
                           print("An error occurred:", e) 
@@ -313,9 +317,10 @@ class RecvThread(threading.Thread):
                         
 
 class WorkThread(threading.Thread):
-    def __init__(self, socket):
+    def __init__(self, socket, t):
         super().__init__()
         self.socket = socket
+        self.t = t
     def run(self):
         global taskQueue,stopFlag
         while True:
@@ -350,9 +355,9 @@ if __name__ == "__main__":
     socket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     socket.bind((listenIp,listenPort))
     print("local socket: ", socket.getsockname())
-    recvThread = RecvThread(socket)
+    recvThread = RecvThread(socket, t = 0)
     recvThread.start()
-    workThread = WorkThread(socket)
+    workThread = WorkThread(socket, t = 0)
     workThread.start()
 
     while True:

@@ -1,0 +1,1004 @@
+Aug 30 21:24:08 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 21:24:44 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 21:24:44 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 21:24:44 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+-- Boot f8df75d7d97949e3ad940e4a2232edf8 --
+Aug 30 21:24:48 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 21:48:59 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 21:48:59 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 21:48:59 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 30 21:48:59 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.949s CPU time.
+-- Boot b2c8a17d8b8746749bd16d63c5356284 --
+Aug 30 21:49:03 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 22:24:28 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 22:24:28 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 22:24:28 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 30 22:24:28 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.814s CPU time.
+-- Boot edcee8e48de643df888b625d0ed1fbf7 --
+Aug 30 22:24:33 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: Exception in thread Thread-1:
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: Traceback (most recent call last):
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/miniconda3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     self.run()
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 308, in run
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     def SetOriginTimeStamp(self,high,low):
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:                                            
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 90, in get_gps_time
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     # List all files in /dev/
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:           ^^^^^^^^^^^^
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: IndexError: list index out of range
+Aug 31 07:33:38 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:33:38 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:33:38 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:33:38 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.573s CPU time.
+Aug 31 07:33:42 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: Exception in thread Thread-1:
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: Traceback (most recent call last):
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/miniconda3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     self.run()
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 329, in run
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     recvTimestamp = recvTimestamp = system_to_ntp_time(get_gps_time())
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                                                        ^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 110, in get_gps_time
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     port_baud = find_port_baud()
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                 ^^^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 96, in find_port_baud
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     for baudrate in possible_baudrates:
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                     ^^^^^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: NameError: name 'possible_baudrates' is not defined
+Aug 31 07:35:55 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:35:55 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:35:55 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:35:59 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:39:28 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:39:28 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:39:28 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:39:28 raspberrypi systemd[1]: mytimerserver.service: Consumed 6.189s CPU time.
+Aug 31 07:39:30 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: local socket:  ('0.0.0.0', 12345)
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:52257
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38578
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46555
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36825
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51007
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41610
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36344
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58539
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49798
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46902
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:57809
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38147
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33215
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50604
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50394
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59005
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59173
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59296
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49130
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:57342
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:45110
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:37174
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38739
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51846
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41753
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:53476
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59332
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38267
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41781
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:43637
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50752
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55739
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:52328
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58982
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46434
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:44569
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:43894
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51931
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:34926
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33666
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55805
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:40329
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:42927
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:60858
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:44228
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:37482
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33364
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58532
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55640
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36567
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:48031
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:56202
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49492
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:46:58 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:46:58 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:46:58 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:46:58 raspberrypi systemd[1]: mytimerserver.service: Consumed 3.075s CPU time.
+Aug 31 07:47:01 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:47:57 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:47:57 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:47:57 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+-- Boot a402823d928243a9a4ec0365c6b0ce31 --
+Aug 31 08:44:44 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 08:50:12 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 08:50:12 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 08:50:12 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 08:50:12 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.976s CPU time.
+-- Boot 390d3c29764541dba86ac5c334a15fbf --
+Aug 31 09:01:26 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 21:24:08 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 21:24:44 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 21:24:44 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 21:24:44 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+-- Boot f8df75d7d97949e3ad940e4a2232edf8 --
+Aug 30 21:24:48 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 21:48:59 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 21:48:59 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 21:48:59 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 30 21:48:59 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.949s CPU time.
+-- Boot b2c8a17d8b8746749bd16d63c5356284 --
+Aug 30 21:49:03 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 30 22:24:28 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 30 22:24:28 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 30 22:24:28 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 30 22:24:28 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.814s CPU time.
+-- Boot edcee8e48de643df888b625d0ed1fbf7 --
+Aug 30 22:24:33 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: Exception in thread Thread-1:
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: Traceback (most recent call last):
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/miniconda3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     self.run()
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 308, in run
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     def SetOriginTimeStamp(self,high,low):
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:                                            
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 90, in get_gps_time
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:     # List all files in /dev/
+Aug 31 07:26:53 raspberrypi start_server.sh[602]:           ^^^^^^^^^^^^
+Aug 31 07:26:53 raspberrypi start_server.sh[602]: IndexError: list index out of range
+Aug 31 07:33:38 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:33:38 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:33:38 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:33:38 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.573s CPU time.
+Aug 31 07:33:42 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: Exception in thread Thread-1:
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: Traceback (most recent call last):
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/miniconda3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     self.run()
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 329, in run
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     recvTimestamp = recvTimestamp = system_to_ntp_time(get_gps_time())
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                                                        ^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 110, in get_gps_time
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     port_baud = find_port_baud()
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                 ^^^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:   File "/home/p7/timeserver/sntp_server/serverntp.py", line 96, in find_port_baud
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:     for baudrate in possible_baudrates:
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]:                     ^^^^^^^^^^^^^^^^^^
+Aug 31 07:33:49 raspberrypi start_server.sh[3211]: NameError: name 'possible_baudrates' is not defined
+Aug 31 07:35:55 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:35:55 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:35:55 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:35:59 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:39:28 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:39:28 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:39:28 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:39:28 raspberrypi systemd[1]: mytimerserver.service: Consumed 6.189s CPU time.
+Aug 31 07:39:30 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: local socket:  ('0.0.0.0', 12345)
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:52257
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38578
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46555
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36825
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51007
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41610
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36344
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58539
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49798
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46902
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:57809
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38147
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33215
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50604
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50394
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59005
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59173
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59296
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49130
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:57342
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:45110
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:37174
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38739
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51846
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41753
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:53476
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:42:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:59332
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:38267
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:41781
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:43637
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:50752
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55739
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:52328
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58982
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:46434
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:44569
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:43894
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:51931
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:34926
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33666
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55805
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:40329
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:42927
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:60858
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:44228
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:37482
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:33364
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:58532
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:55640
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:36567
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:48031
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:56202
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Sent to 127.0.0.1:49492
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Received 1 packets
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Found valid baud rate: 4800
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: {'port': '/dev/ttyS0', 'baud': 4800}
+Aug 31 07:45:34 raspberrypi start_server.sh[3318]: Error reading GPS time: Attempting to use a port that is not open
+Aug 31 07:46:58 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:46:58 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:46:58 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 07:46:58 raspberrypi systemd[1]: mytimerserver.service: Consumed 3.075s CPU time.
+Aug 31 07:47:01 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 07:47:57 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 07:47:57 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 07:47:57 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+-- Boot a402823d928243a9a4ec0365c6b0ce31 --
+Aug 31 08:44:44 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
+Aug 31 08:50:12 raspberrypi systemd[1]: Stopping mytimerserver.service - Time server from gps...
+Aug 31 08:50:12 raspberrypi systemd[1]: mytimerserver.service: Deactivated successfully.
+Aug 31 08:50:12 raspberrypi systemd[1]: Stopped mytimerserver.service - Time server from gps.
+Aug 31 08:50:12 raspberrypi systemd[1]: mytimerserver.service: Consumed 1.976s CPU time.
+-- Boot 390d3c29764541dba86ac5c334a15fbf --
+Aug 31 09:01:26 raspberrypi systemd[1]: Started mytimerserver.service - Time server from gps.
